@@ -7,6 +7,6 @@ In het het bestand  [index.html](index.html) houd je een overzicht bij van wat j
 
 ma-cloud site:
 	
-	https://27741.hosts1.ma-cloud.nl/index.html
+https://27741.hosts1.ma-cloud.nl/index.html
 
 
