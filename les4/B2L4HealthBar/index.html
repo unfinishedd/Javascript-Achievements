@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthBar</title>
+</head>
+    <head>Good Luck Winning </head>
+    <body>
+        <meter id="meters" min="0" max="1000" value="1000" high="1000" low="400"></meter>      
+        <input id="AttackButton" type="button" value="Attack">
+        <h1 id="ChangeText">..</h1>
+        
+        <script>
+            document.getElementById("AttackButton").addEventListener("click",(e)=>{
+                //Hier code om de meter leeg te maken
+                //Haal via het DOM de elementen binnen
+                let health = document.getElementById("meters")
+                health.value -= 100;
+
+                if (health.value <= 0) {
+                    document.getElementById("ChangeText").innerHTML = "Game Over!<br>";
+                }
+            });       
+        </script>
+    </body>
+</html>
