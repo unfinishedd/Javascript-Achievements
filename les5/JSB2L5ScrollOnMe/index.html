@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll on me!</title>
+    
+    <style>
+        #myDIV{
+            border: 1px solid black;
+        }
+        .redText{
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myDIV">Scroll voor een goedkope virus!</h1>
+    <br>
+    <button id="knop">Probeer opnieuw!</button>
+</body>
+<script>
+document.getElementById("myDIV").addEventListener("wheel", myFunction);
+hello = () => "Unlucky probeer maar opnieuw!";
+
+document.getElementById("knop").addEventListener("click", knopIngedrukt);
+
+function myFunction() {
+    var myDiv = document.getElementById("myDIV");
+    myDiv.innerHTML = hello();
+
+    myDiv.style.fontSize = "70px";
+    myDiv.style.color = "red";
+    myDiv.class = "redText";
+}
+function knopIngedrukt(){
+    location.reload();
+}
+</script>
+</html>
